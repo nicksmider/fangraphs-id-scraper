@@ -39,9 +39,8 @@ async function start() {
         } catch (err) {
             if (err instanceof TypeError) {
                 console.log(`RECAPTCHA detected at id: ${scrape}`);
-                rl.question('Have you solved it? (Y/n)', (answer) => {
-                    if (answer.toLowerCase() !== 'y') return;
-                });
+                const ans = await askQuestion('Have you solved it? (Y/n)');
+                if (ans.toLowerCase() !== 'y') return;
             }
             else {
                 console.log(`No player with id: ${scrape}`);
@@ -52,6 +51,19 @@ async function start() {
     }
     process.exit();
 }
+
+function askQuestion(query) {
+    const rl = readline.createInterface({
+        input: process.stdin,
+        output: process.stdout,
+    });
+
+    return new Promise(resolve => rl.question(query, ans => {
+        rl.close();
+        resolve(ans);
+    }))
+}
+
 
 start();
 
