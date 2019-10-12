@@ -39,7 +39,7 @@ async function start() {
         } catch (err) {
             if (err instanceof TypeError) {
                 console.log(`RECAPTCHA detected at id: ${scrape}`);
-                const ans = await askQuestion('Have you solved it? (Y/n)');
+                const ans = await askQuestion('Have you solved it? (Y/n):');
                 if (ans.toLowerCase() !== 'y') return;
             }
             else {
