@@ -6,7 +6,7 @@
 
 ## Usage
 
-First command line arguemnt is where to begin, the second is where to stop.
+First command line argument is where to begin, the second is where to stop.
 
 `node index.js 1 25000`
 
