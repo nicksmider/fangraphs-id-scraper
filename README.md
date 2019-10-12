@@ -12,7 +12,7 @@ First command line arguemnt is where to begin, the second is where to stop.
 
 It is possible that Fangraphs ReCaptcha's the script if you give it a large input size.
 
-You will see soemthing along the lines of: 
+You will see something along the lines of: 
 
 ```
 RECAPTCHA detected at id: 1
