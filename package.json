@@ -1,0 +1,16 @@
+{
+  "name": "playerid_scrapper",
+  "version": "1.0.0",
+  "description": "Scrape baseball website IDs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nicholas Smider",
+  "license": "ISC",
+  "dependencies": {
+    "csv-writer": "^1.5.0",
+    "node-fetch": "^2.6.0",
+    "node-html-parser": "^1.1.16"
+  }
+}
