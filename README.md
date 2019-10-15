@@ -1,4 +1,4 @@
-# Fangraphs ID Scrapper
+# Fangraphs ID Scraper
 
 ## Install dependecies
 
