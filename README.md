@@ -1,6 +1,6 @@
 # Fangraphs ID Scraper
 
-## Install dependecies
+## Install dependencies
 
 `npm install`
 
